@@ -1,0 +1,28 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-bg-color: #121214;
+    --text-color: #E1E1E6;
+    --title-color: #04D361;
+    --form-color: #A8A8A8;
+    --bg-button-color: #8257e5;
+  }
+
+body {
+    background: var(--body-bg-color) url(assets/read_news.jpg) no-repeat top right/50vw 100vh;
+    width: 100%;
+    height: 100%;
+    padding: 50px 30px 50px 30px;
+}
+
+header {
+    width: 50vw;
+}
+
+header img {
+    width: 390px;
+}
