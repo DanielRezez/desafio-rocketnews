@@ -59,20 +59,20 @@ header img {
     font-family: 'Work Sans', sans-serif;
     color: var(--title-color);
     font-weight: 700;
-    font-size: 24px;
+    font-size: 28px;
 }
 
 #main-text span {
     font-family: 'League Spartan', sans-serif;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 18px;
     color: var(--text-color);
 }
 
 #main-text p {
     font-family: 'League Spartan', sans-serif;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 18px;
     color: var(--text-color);
     line-height: 20px;
 }
@@ -89,7 +89,7 @@ header img {
 #email-form form label {
     font-family: 'League Spartan', sans-serif;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 18px;
     color: var(--form-color);
     margin-bottom: 20px;
 }
@@ -107,7 +107,7 @@ header img {
     border: none;
     border-left: 5px solid var(--title-color);
     padding: 10px;
-    font-size: 12px;
+    font-size: 16px;
     font-family: 'Work Sans', sans-serif;
     font-weight: 500;
 }
@@ -132,14 +132,81 @@ header img {
     color: var(--bg-button-color);
     font-family: 'League Spartan', sans-serif;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 #email-form a:hover {
     color: var(--title-color);
 }
 
-@media screen and (max-width: 1551px) {
+@media screen and (min-width: 768px) and (max-width: 968px) {
+    body {
+        grid-template-areas: 
+            "image image"
+            "content content";
+        background: var(--body-bg-color);
+        width: 100vw;
+        height: 100vh;
+        overflow: scroll;
+    }
+
+    #image {
+        height: 30vh;
+        width: 100vw;
+        box-shadow: inset 0px -5px 10px black;
+        background-attachment: fixed;
+        background-size: 100vw auto;
+        background-position: top;
+    }
+
+    #content {
+        height: 100vh;
+        width: 90vw;
+        background: var(--body-bg-color);
+        padding: 50px 20px 50px;
+    }
+    
+    header img {
+        width: 40vw;
+    }
+
+    #main-text {
+        width: 100%;
+        padding: 0px;
+    }
+
+    #main-text h2 {
+        font-size: 26px;
+
+    }    
+
+    #main-text span {
+        font-size: 16px;
+    }
+
+    #main-text p {
+        font-size: 16px;
+    }
+
+    #text-box {
+        width: 100%;
+    }
+
+    #email-form form label {
+        font-size: 16px;
+    }
+
+    #user-email {
+        font-size: 16px;
+    }
+
+    #email-form a {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
     body {
         grid-template-areas: 
             "image image"
@@ -165,9 +232,13 @@ header img {
         background: var(--body-bg-color);
         padding: 50px 20px 50px;
     }
+
+    header {
+        width: 100%;
+    }
     
     header img {
-        width: 90vw;
+        width: 100%;
     }
 
     #main-text {
@@ -175,8 +246,32 @@ header img {
         padding: 0px;
     }
 
+    #main-text h2 {
+        font-size: 24px;
+
+    }    
+
+    #main-text span {
+        font-size: 14px;
+    }
+
+    #main-text p {
+        font-size: 14px;
+    }
+
     #text-box {
         width: 100%;
     }
 
+    #email-form form label {
+        font-size: 14px;
+    }
+
+    #user-email {
+        font-size: 14px;
+    }
+
+    #email-form a {
+        font-size: 14px;
+    }
 }
