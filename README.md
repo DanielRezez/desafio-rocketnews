@@ -38,4 +38,4 @@ Esse projeto está sob a licença MIT.
 
 ---
 
-Feito com ♥ eu mesmo
+Feito com ♥ por eu mesmo
